@@ -1,0 +1,25 @@
+meta {
+  name: Excluir usuário
+  type: http
+  seq: 4
+}
+
+delete {
+  url: https://serverest.dev/produtos/:idProduto
+  body: none
+  auth: inherit
+}
+
+params:path {
+  idProduto: 
+}
+
+headers {
+  accept: application/json
+  Authorization: 
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

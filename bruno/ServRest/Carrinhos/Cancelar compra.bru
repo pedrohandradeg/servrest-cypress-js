@@ -1,0 +1,21 @@
+meta {
+  name: Cancelar compra
+  type: http
+  seq: 5
+}
+
+delete {
+  url: https://serverest.dev/carrinhos/cancelar-compra
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+  Authorization: 
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

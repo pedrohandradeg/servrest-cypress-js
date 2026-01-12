@@ -1,0 +1,35 @@
+meta {
+  name: Editar usuário
+  type: http
+  seq: 5
+}
+
+put {
+  url: https://serverest.dev/produtos/:idProduto
+  body: json
+  auth: inherit
+}
+
+params:path {
+  idProduto: 
+}
+
+headers {
+  accept: application/json
+  Content-Type: application/json
+  Authorization: 
+}
+
+body:json {
+  {
+    "nome": "Logitech MX Vertical",
+    "preco": 470,
+    "descricao": "Mouse",
+    "quantidade": 381
+  }
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

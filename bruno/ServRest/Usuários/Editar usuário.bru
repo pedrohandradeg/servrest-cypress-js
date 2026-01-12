@@ -1,0 +1,34 @@
+meta {
+  name: Editar usuário
+  type: http
+  seq: 5
+}
+
+put {
+  url: https://serverest.dev/usuarios/:idUser
+  body: json
+  auth: inherit
+}
+
+params:path {
+  idUser: 
+}
+
+headers {
+  accept: application/json
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nome": "Fulano da Silva",
+    "email": "beltrano@qa.com.br",
+    "password": "teste",
+    "administrador": "true"
+  }
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

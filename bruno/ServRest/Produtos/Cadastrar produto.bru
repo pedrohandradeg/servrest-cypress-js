@@ -1,0 +1,31 @@
+meta {
+  name: Cadastrar produto
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://serverest.dev/produtos
+  body: json
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+  Content-Type: application/json
+  Authorization: 
+}
+
+body:json {
+  {
+    "nome": "Logitech MX Vertical",
+    "preco": 470,
+    "descricao": "Mouse",
+    "quantidade": 381
+  }
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

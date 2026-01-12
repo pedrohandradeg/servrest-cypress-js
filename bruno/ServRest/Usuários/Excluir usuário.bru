@@ -1,0 +1,24 @@
+meta {
+  name: Excluir usuário
+  type: http
+  seq: 4
+}
+
+delete {
+  url: https://serverest.dev/usuarios/:idUser
+  body: none
+  auth: inherit
+}
+
+params:path {
+  idUser: 
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

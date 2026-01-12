@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "ServRest",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

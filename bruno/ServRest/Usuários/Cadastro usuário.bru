@@ -1,0 +1,30 @@
+meta {
+  name: Cadastro usuário
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://serverest.dev/usuarios
+  body: json
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nome": "Fulano da Silva",
+    "email": "beltrano@qa.com.br",
+    "password": "teste",
+    "administrador": "true"
+  }
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

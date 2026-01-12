@@ -1,0 +1,19 @@
+meta {
+  name: Lista produtos cadastrados
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://serverest.dev/produtos
+  body: none
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

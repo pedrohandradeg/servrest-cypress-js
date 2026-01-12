@@ -1,0 +1,24 @@
+meta {
+  name: Consultar usuário por ID
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://serverest.dev/usuarios/:idUser
+  body: none
+  auth: inherit
+}
+
+params:path {
+  idUser: 
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Lista carrinhos cadastrados
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://serverest.dev/carrinhos
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~_id: 
+  ~precoTotal: 
+  ~quantidadeTotal: 
+  ~idUsuario: 
+}
+
+headers {
+  accept: application/json
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

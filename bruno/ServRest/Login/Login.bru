@@ -1,0 +1,27 @@
+meta {
+  name: Login
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://serverest.dev/login
+  body: json
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "email": "fulano@qa.com",
+    "password": "teste"
+  }
+}
+
+settings {
+  encodeUrl: false
+}

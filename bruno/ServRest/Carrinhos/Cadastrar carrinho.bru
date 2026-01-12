@@ -1,0 +1,37 @@
+meta {
+  name: Cadastrar carrinho
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://serverest.dev/carrinhos
+  body: json
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+  Content-Type: application/json
+  Authorization: 
+}
+
+body:json {
+  {
+    "produtos": [
+      {
+        "idProduto": "BeeJh5lz3k6kSIzA",
+        "quantidade": 1
+      },
+      {
+        "idProduto": "YaeJ455lz3k6kSIzA",
+        "quantidade": 3
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}
