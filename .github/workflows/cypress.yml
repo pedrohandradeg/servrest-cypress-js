@@ -1,4 +1,4 @@
-name: Cypress e2e Tests
+name: Cypress Tests
 on: [push]
 jobs:
   cypress-run:
@@ -13,8 +13,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Run e2e tests
+      - name: Cypress run
         # Uses the official Cypress GitHub action https://github.com/cypress-io/github-action
         uses: cypress-io/github-action@v6
         with:

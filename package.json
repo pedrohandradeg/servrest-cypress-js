@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "test:cycloud": "npx cypress run --record --key a01b6d2e-cc64-451c-b26e-78891d531715"
+  },
+
   "devDependencies": {
     "@faker-js/faker": "^10.2.0",
     "cypress": "^15.8.2",
